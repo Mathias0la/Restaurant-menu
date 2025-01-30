@@ -1,5 +1,6 @@
 import "./App.css";
 import MenuCards from "./MenuCards";
+import styles from "./MenuCard.module.css";
 
 function App() {
   const meny = [
@@ -83,19 +84,19 @@ function App() {
     <>
       <main>
         <h2>Forretter</h2>
-        <div className="content-container">
+        <div className={styles.contentContainer}>
           {Forrett.map((dish) => {
             return <MenuCards key={dish.id} data={dish} />;
           })}
         </div>
         <h2>Hovedretter</h2>
-        <div className="content-container">
+        <div className={styles.contentContainer}>
           {Hovedretter.map((dish) => {
             return <MenuCards key={dish.id} data={dish} />;
           })}
         </div>
         <h2>Desserter</h2>
-        <div className="content-container">
+        <div className={styles.contentContainer}>
           {Dessert.map((dish) => {
             return <MenuCards key={dish.id} data={dish} />;
           })}

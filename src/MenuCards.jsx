@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import styles from "./MenuCard.module.css";
 
 const Button = styled.button`
   background: #bf4f74;
@@ -24,7 +25,7 @@ export default function MenuCards({
     .split(",")
     .map((ingrediens) => ingrediens.trim());
   return (
-    <div className="menu-card">
+    <div className={styles.menuCard}>
       <h2>{tittel}</h2>
       <h3>{kategori}</h3>
       <p>Ingredienser:</p>
@@ -34,7 +35,7 @@ export default function MenuCards({
         ))}
       </ul>
 
-      <div className="price-card">
+      <div className={styles.priceCard}>
         <Button>{pris}</Button>
       </div>
     </div>

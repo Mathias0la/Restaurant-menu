@@ -1,0 +1,60 @@
+.contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 20px;
+}
+
+.menuCard {
+  background-color: rgba(22, 169, 142, 0.309);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 350px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px black;
+}
+
+.menuCard h3 {
+  font-weight: 500;
+  margin: 10px;
+}
+
+.menuCard h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+  text-shadow: 10px 10px 10px black;
+}
+
+.menuCard p {
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.priceCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.menuCard li {
+  font-size: 15px;
+  margin: 10px;
+  font-weight: 300;
+}
+
+.menuCard ul {
+  margin: 10px;
+}
